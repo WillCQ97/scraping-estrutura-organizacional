@@ -14,13 +14,14 @@ Linha 2
 - Analisando o código fonte da página, é possível verificar que para gerar essa estrutura para a tabela foi utilizado um plugin para JQuery chamado [jquery-treetable](https://github.com/ludo/jquery-treetable).
 
 ## Funcionamento
-- Esse robo obtém as linhas das tabelas e as trata como nós em uma árvore.
+- Esse robô obtém as linhas das tabelas e as trata como nós em uma árvore.
 - Então é gerado um objeto javascript para cada nó com os atributos sendo os dados das colunas, como por exemplo `{nomeUnidade: "", codigo: "", id: "", idNodoPai: ""}`.
 - A lista contendo todos os nós será então percorrida e para cada elemento será verificado se ele possui um pai ou não, sendo então colocado em um array.
 - Se o nó não possui pai, fica na raiz do array, senão é procurado o pai existente no array e o filho é adicionado ao array "filhos" desse nó.
 
 ## NOTA
-- A parte difícil foi gerada pelo Chat GPT ;-) com o seguinte prompt
+- A parte "difícil" foi gerada pelo Chat GPT ;-) com o seguinte prompt:
+
 ```
 Utilizando javascript temos o seguinte cenário: há uma lista de objetos com cada objeto possuindo um id e um idPai, 
 o último referencia a algum outro objeto na lista. Dada essa lista, montar um objeto adicionando a 
