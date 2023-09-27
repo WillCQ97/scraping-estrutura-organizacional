@@ -1,7 +1,7 @@
 # scraping-estrutura-organizacional
 
 ## Sobre
-- Uso do puppeter e chat GPT para gerar um json contendo a [Estrutura Organizacional da UFES](https://servidor.ufes.br/EstruturaOrganizacional/index.jsp).
+- Uso do [puppeteer](https://github.com/puppeteer/puppeteer) e chat GPT para gerar um json contendo a [Estrutura Organizacional da UFES](https://servidor.ufes.br/EstruturaOrganizacional/index.jsp).
 - A tabela de estrutura organizacional da ufes apresenta as unidades organizacionais em uma estrutura em árvore.
 - Basicamente, uma linha pode estar recuada indicando que essa linha é filha da anterior. Conforme exemplo:
 ```
